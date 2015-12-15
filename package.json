@@ -43,7 +43,7 @@
   "dependencies": {
     "babel-runtime": "^5.8.34",
     "lodash.defaultsdeep": "^3.10.0",
-    "packagesmith": "^1.0.2",
+    "packagesmith": "^1.1.0",
     "packagesmith.formats.ini": "^1.1.1",
     "packagesmith.formats.multiline": "^1.0.1",
     "packagesmith.questions.repository": "^1.0.1"
