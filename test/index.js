@@ -70,8 +70,8 @@ describe('provisionGit', () => {
           repository: 'git@example.com:foo/bar.git',
         }).should.equal(
 `[remote "origin"]
-url=git@example.com:foo/bar.git
-fetch=+refs/heads/*:refs/remotes/origin/*
+url = git@example.com:foo/bar.git
+fetch = +refs/heads/*:refs/remotes/origin/*
 `);
       });
 
@@ -79,14 +79,14 @@ fetch=+refs/heads/*:refs/remotes/origin/*
         const contents = '[core]\neditor=foo\n[remote "upstream"]\nurl=foo';
         gitconfigContents(contents, { repository: 'git@example.com:foo/bar.git' }).should.equal(
 `[core]
-editor=foo
+editor = foo
 
 [remote "upstream"]
-url=foo
+url = foo
 
 [remote "origin"]
-url=git@example.com:foo/bar.git
-fetch=+refs/heads/*:refs/remotes/origin/*
+url = git@example.com:foo/bar.git
+fetch = +refs/heads/*:refs/remotes/origin/*
 `);
       });
 
@@ -94,8 +94,8 @@ fetch=+refs/heads/*:refs/remotes/origin/*
         const contents = '[remote "origin"]\nurl=foo\nfetch=bar';
         gitconfigContents(contents, { repository: 'git@example.com:foo/bar.git' }).should.equal(
 `[remote "origin"]
-url=foo
-fetch=bar
+url = foo
+fetch = bar
 `);
       });
 

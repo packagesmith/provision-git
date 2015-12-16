@@ -6,7 +6,7 @@ import { runProvisionerSet } from 'packagesmith';
 export function provisionGit({
   init = true,
   setupGitConfig = true,
-  gitConfigOptions,
+  gitConfigOptions = { whitespace: true },
   gitignoreLines = false,
   gitIgnoreOptions,
 } = {}) {
