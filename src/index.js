@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import iniFile from 'packagesmith.formats.ini';
 import multiline from 'packagesmith.formats.multiline';
 import repositoryQuestion from 'packagesmith.questions.repository';
