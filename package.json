@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "babel-runtime": "^5.8.34",
-    "lodash.defaultsdeep": "^3.10.0",
+    "lodash.defaultsdeep": "^4.0.0",
     "packagesmith": "^1.1.0",
     "packagesmith.formats.ini": "^1.1.1",
     "packagesmith.formats.multiline": "^1.0.1",
