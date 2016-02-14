@@ -1,8 +1,8 @@
 #!/usr/bin/env node
+import defaultsDeep from 'lodash.defaultsdeep';
 import iniFile from 'packagesmith.formats.ini';
 import multiline from 'packagesmith.formats.multiline';
 import repositoryQuestion from 'packagesmith.questions.repository';
-import defaultsDeep from 'lodash.defaultsdeep';
 import { runProvisionerSet } from 'packagesmith';
 export function provisionGit({
   init = true,
@@ -39,5 +39,6 @@ export function provisionGit({
 export default provisionGit;
 
 if (require.main === module) {
-  runProvisionerSet(process.argv[2] || '.', provisionGit());
+  const directoryArgPosition = 2;
+  runProvisionerSet(process.argv[directoryArgPosition] || '.', provisionGit());
 }
